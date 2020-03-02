@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let movieRequest: MovieRequest
+    let movies: [Movie]()
+    
     @IBOutlet weak var movieTableView: UITableView!
     @IBOutlet weak var searchButton: UIButton!
     
@@ -18,6 +21,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupTableview()
+        movieRequest = FakeMovieRequest()
+        movieRequest.getList("", page: nil) { (page, err) in
+            self.movies = page?.results
+        }
+        
     }
 
     func setupTableview (){
@@ -41,5 +49,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return movieCell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailViewController = DetailViewController()
+        detailViewController.model = movies[indexPath.row]
+        self.present(detailViewController, animated: true, completion: nil)
+    }
 }
