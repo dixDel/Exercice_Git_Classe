@@ -9,19 +9,33 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    
+    @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var labelDirector: UILabel!
+    @IBOutlet weak var labelDate: UILabel!
+    @IBOutlet weak var labelDescription: UILabel!
+    @IBOutlet weak var imagePoster: UIImageView!
     @IBOutlet weak var btSafari: UIButton!
+    var model: Movie?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        labelTitle.text = model?.overview
+        labelDirector.text = "Directeur: " + model?.director
+        labelDate.text = "Sortie:" + model?.releaseDate
+        labelDescription.text = model?.overview
+        
+        
+        
+        //magePoster.image
+        
+    }
+    @IBAction func onTapOpenBrowser(_ sender: Any) {
+        guard let url = URL(string: "https://www.google.comsearch?q=\(labelTitle.text)") else { return }
+        UIApplication.shared.open(url)
         
     }
     
-    @IBAction func onTapOpenSafari(_ sender: Any) {
-       guard let url = URL(string: "https://www.google.com") else { return }
-       UIApplication.shared.open(url)
-    }
-    
-
 }
