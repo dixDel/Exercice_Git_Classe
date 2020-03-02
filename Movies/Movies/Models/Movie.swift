@@ -14,6 +14,7 @@ struct Movie: Codable {
   var posterUrl: String?
   var overview: String?
   var director: String?
+  var genres: [Int]
   
   private enum CodingKeys: String, CodingKey {
     case title = "title"
@@ -21,6 +22,7 @@ struct Movie: Codable {
     case posterUrl = "poster_path"
     case overview = "overview"
     case director = "director"
+    case genres = "genre_ids"
   }
   
   init () {
@@ -29,6 +31,7 @@ struct Movie: Codable {
     posterUrl = nil
     overview = nil
     director = nil
+    genres = Array()
   }
   
   init (from decoder: Decoder) throws {
@@ -39,5 +42,6 @@ struct Movie: Codable {
     posterUrl = (try container.decodeIfPresent(String.self, forKey: .posterUrl))
     overview = (try container.decodeIfPresent(String.self, forKey: .overview))
     director = (try container.decodeIfPresent(String.self, forKey: .director))
+    genres = (try container.decodeIfPresent([Int].self, forKey: .genres)) ?? Array()
   }
 }

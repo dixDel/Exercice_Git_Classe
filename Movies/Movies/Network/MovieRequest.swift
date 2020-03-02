@@ -14,4 +14,5 @@ typealias ImageRequestCallback = (_ image: UIImage?, _ error: String?) -> Void
 protocol MovieRequest {
   func getList (_ title: String, page: Int?, complationHandler: @escaping MovieRequestCallback) -> Void
   func getImage (_ url: String, size: Int, complationHandler: @escaping ImageRequestCallback) -> Void
+  //func getImage (_ imageView: UIImageView, size: Int, placeholderImageName) -> Void
 }
