@@ -11,7 +11,7 @@ import Alamofire
 import AlamofireImage
 
 class AFMovieRequest: MovieRequest {
-  func getList(_ title: String, page: Int?, complationHandler: @escaping MovieRequestCallback) {
+  func getList (_ title: String, page: Int?, complationHandler: @escaping MovieRequestCallback) {
     var queryPage = ""
     if let p = page {
       queryPage = "&page=\(p)"
@@ -39,7 +39,7 @@ class AFMovieRequest: MovieRequest {
     })
   }
   
-  func getImage(_ url: String, size: Int, complationHandler: @escaping ImageRequestCallback) {
+  func getImage (_ url: String, size: Int, complationHandler: @escaping ImageRequestCallback) {
 
     Alamofire.request("https://image.tmdb.org/t/p/w\(size)\(url)").responseData { (imgData) in
       if let data = imgData.data {
@@ -50,5 +50,16 @@ class AFMovieRequest: MovieRequest {
       }
       complationHandler(nil, "Pas de réponse")
     }
+  }
+  
+  func getImage(_ imageView: UIImageView, url: String, size: Int, radius: Float, placeholderImageName: String) {
+    let filter = AspectScaledToFillSizeWithRoundedCornersFilter(
+        size: imageView.frame.size,
+        radius: CGFloat(radius)
+    )
+    imageView.af_setImage(
+      withURL: URL(string: "https://image.tmdb.org/t/p/w\(size)\(url)")!,
+      placeholderImage: UIImage(named: placeholderImageName),
+      filter: filter)
   }
 }
