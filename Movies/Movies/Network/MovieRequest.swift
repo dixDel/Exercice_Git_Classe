@@ -9,6 +9,6 @@
 import UIKit
 
 protocol MovieRequest {
-  func getList (_ title: String, page: Int) -> MoviePage?
+  func getList (_ title: String, page: Int?) -> MoviePage?
   func getImage (_ url: String, size: Int) -> UIImage?
 }
