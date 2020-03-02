@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class DetailViewController: UIViewController {
 
@@ -23,12 +25,15 @@ class DetailViewController: UIViewController {
         
         labelTitle.text = model?.overview
         labelDirector.text = "Directeur: " + model?.director
-        labelDate.text = "Sortie:" + model?.releaseDate
+        labelDate.text = "Sortie: " + model?.releaseDate
         labelDescription.text = model?.overview
     
-        
+        Alamofire.request(model?.posterUrl).responseImage { response in
+            if case .success(let image) = response.result {
+                imagePoster.image = image
+            }
+        }
     
-        //magePoster.image
     }
     
 
