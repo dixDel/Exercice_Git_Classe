@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class AFMovieRequest: MovieRequest {
   func getList(_ title: String, page: Int?, complationHandler: @escaping MovieRequestCallback) {
@@ -17,7 +19,24 @@ class AFMovieRequest: MovieRequest {
     let t = title.trimmingCharacters(in: .whitespaces)
     if t.isEmpty {
       complationHandler(nil, "Search title cannot be empty")
+      return
     }
+    let url = "https://api.themoviedb.org/3/search/movie?api_key=c1ac741d5dd740f9861e794c5363b0c2&query=\(t)\(queryPage)"
+    Alamofire.request(url).responseJSON(completionHandler: { (jsonResp) in
+      let jsonDecoder = JSONDecoder()
+      if let data = jsonResp.data {
+        do {
+          let receivePage = try jsonDecoder.decode(MoviePage.self, from: data)
+          complationHandler(receivePage, nil)
+        }
+        catch (let error) {
+          complationHandler(nil, "\(error)")
+        }
+      }
+      else {
+        complationHandler(nil, "Pas de réponse")
+      }
+    })
   }
   
   func getImage(_ url: String, size: Int, complationHandler: @escaping ImageRequestCallback) {
