@@ -23,7 +23,9 @@ class ViewController: UIViewController {
         setupTableview()
         movieRequest = FakeMovieRequest()
         movieRequest.getList("", page: nil) { (page, err) in
-            self.movies = page?.results
+            if let workingPage = page {
+                movies = workingPage.results
+            }
         }
         
     }
