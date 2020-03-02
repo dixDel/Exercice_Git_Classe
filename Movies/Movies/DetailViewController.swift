@@ -10,18 +10,25 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var labelDetail: UILabel!
+    @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelDirector: UILabel!
     @IBOutlet weak var labelDate: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
-    
     @IBOutlet weak var imagePoster: UIImageView!
+    
+    var model: Movie?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        labelTitle.text = model?.overview
+        labelDirector.text = "Directeur: " + model?.director
+        labelDate.text = "Sortie:" + model?.releaseDate
+        labelDescription.text = model?.overview
+    
         
+    
+        //magePoster.image
     }
     
 
