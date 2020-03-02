@@ -10,10 +10,17 @@ import UIKit
 
 class AFMovieRequest: MovieRequest {
   func getList(_ title: String, page: Int?, complationHandler: @escaping MovieRequestCallback) {
-    
+    var queryPage = ""
+    if let p = page {
+      queryPage = "&page=\(p)"
+    }
+    let t = title.trimmingCharacters(in: .whitespaces)
+    if t.isEmpty {
+      complationHandler(nil, "Search title cannot be empty")
+    }
   }
   
-  func getImage(_ url: String, size: Int, complationHandler: @escaping ImageRequstCallback) {
+  func getImage(_ url: String, size: Int, complationHandler: @escaping ImageRequestCallback) {
     
   }
 }
