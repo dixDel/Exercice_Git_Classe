@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pAn-9n-gUG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -7,6 +7,36 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Splashscreen View Controller-->
+        <scene sceneID="Du1-ZT-IIh">
+            <objects>
+                <viewController id="pAn-9n-gUG" customClass="SplashscreenViewController" customModule="Movies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HxQ-99-sgn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Y8-Ob-g3s" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="e2V-Rn-wPb" firstAttribute="bottom" secondItem="2Y8-Ob-g3s" secondAttribute="bottom" id="7aA-1V-zoS"/>
+                            <constraint firstItem="e2V-Rn-wPb" firstAttribute="trailing" secondItem="2Y8-Ob-g3s" secondAttribute="trailing" id="91y-Nb-oBn"/>
+                            <constraint firstItem="2Y8-Ob-g3s" firstAttribute="top" secondItem="e2V-Rn-wPb" secondAttribute="top" id="bGy-eB-Rb2"/>
+                            <constraint firstItem="2Y8-Ob-g3s" firstAttribute="leading" secondItem="e2V-Rn-wPb" secondAttribute="leading" id="q7V-yr-dgc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e2V-Rn-wPb"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="2Y8-Ob-g3s" id="PoN-Q8-zhZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3rt-Op-kga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-765" y="138"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -52,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+            <point key="canvasLocation" x="139" y="138"/>
         </scene>
     </scenes>
 </document>
