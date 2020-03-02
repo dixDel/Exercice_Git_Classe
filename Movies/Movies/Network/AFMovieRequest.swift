@@ -9,7 +9,7 @@
 import UIKit
 
 class AFMovieRequest: MovieRequest {
-  func getList(_ title: String, page: Int) -> MoviePage? {
+  func getList(_ title: String, page: Int?) -> MoviePage? {
     return nil
   }
   
