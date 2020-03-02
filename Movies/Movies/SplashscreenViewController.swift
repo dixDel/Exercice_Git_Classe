@@ -16,13 +16,14 @@ class SplashscreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let starAnimation = Animation.named("animation")
+        let starAnimation = Animation.named("movieanimation")
         animationView.animation = starAnimation
-        animationView.loopMode = LottieLoopMode.repeat(4)
         animationView.play { (finished) in
-            let vc = ViewController()
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: false)
+            if let vc = self.storyboard?.instantiateViewController(identifier: "HomeViewController") as? ViewController {
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: false)
+            }
+            
         }
     }
 

@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var movieTableView: UITableView!
     @IBOutlet weak var searchButton: UIButton!
-
     @IBOutlet weak var searchTextView: UITextField!
+    
     override func viewDidLoad() {
 
         super.viewDidLoad()

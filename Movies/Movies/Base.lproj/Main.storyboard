@@ -40,7 +40,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Movies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Movies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,9 +75,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="movieTableView" destination="HMY-Ch-wpt" id="59b-0D-Quz"/>
-                        <outlet property="searchButton" destination="nVI-fi-Y4H" id="zhc-OG-QMd"/>
-                        <outlet property="searchTextView" destination="okh-vs-HKz" id="HQL-Ha-Mkn"/>
+                        <outlet property="movieTableView" destination="HMY-Ch-wpt" id="GiH-5u-4Pq"/>
+                        <outlet property="searchButton" destination="nVI-fi-Y4H" id="boc-oX-QSw"/>
+                        <outlet property="searchTextView" destination="okh-vs-HKz" id="SeM-cQ-Uzv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

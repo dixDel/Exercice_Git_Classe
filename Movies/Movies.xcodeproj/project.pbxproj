@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		201E5CF2240D43E700223D56 /* SplashscreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E5CF1240D43E700223D56 /* SplashscreenViewController.swift */; };
-		201E5CF4240D487200223D56 /* animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 201E5CF3240D487200223D56 /* animation.json */; };
+		204DC2CC240D5D78009FC06E /* movieanimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 204DC2CB240D5D78009FC06E /* movieanimation.json */; };
 		4080E8AFE8C839C8EA9B4771 /* Pods_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4AC14147D9783E25145462 /* Pods_Movies.framework */; };
+		C108D4F5240D41B50097123A /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C108D4F3240D41B50097123A /* MovieCell.swift */; };
+		C108D4F6240D41B50097123A /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C108D4F4240D41B50097123A /* MovieCell.xib */; };
 		C94040AF240D40D8008D4196 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94040AE240D40D8008D4196 /* Movie.swift */; };
 		C94040B1240D44B3008D4196 /* MovieRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94040B0240D44B3008D4196 /* MovieRequest.swift */; };
 		C94040B3240D45E4008D4196 /* MoviePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94040B2240D45E4008D4196 /* MoviePage.swift */; };
-		C108D4F5240D41B50097123A /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C108D4F3240D41B50097123A /* MovieCell.swift */; };
-		C108D4F6240D41B50097123A /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C108D4F4240D41B50097123A /* MovieCell.xib */; };
 		F95B2923240D3C96000ECFC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95B2922240D3C96000ECFC5 /* AppDelegate.swift */; };
 		F95B2925240D3C96000ECFC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95B2924240D3C96000ECFC5 /* SceneDelegate.swift */; };
 		F95B2927240D3C96000ECFC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95B2926240D3C96000ECFC5 /* ViewController.swift */; };
@@ -25,15 +25,15 @@
 
 /* Begin PBXFileReference section */
 		201E5CF1240D43E700223D56 /* SplashscreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashscreenViewController.swift; sourceTree = "<group>"; };
-		201E5CF3240D487200223D56 /* animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation.json; sourceTree = "<group>"; };
+		204DC2CB240D5D78009FC06E /* movieanimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movieanimation.json; sourceTree = "<group>"; };
 		7CF15EFA657D622D6E888D20 /* Pods-Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies.release.xcconfig"; path = "Target Support Files/Pods-Movies/Pods-Movies.release.xcconfig"; sourceTree = "<group>"; };
 		AB4AC14147D9783E25145462 /* Pods_Movies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30611D620D2E36458208E27 /* Pods-Movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies.debug.xcconfig"; path = "Target Support Files/Pods-Movies/Pods-Movies.debug.xcconfig"; sourceTree = "<group>"; };
+		C108D4F3240D41B50097123A /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		C108D4F4240D41B50097123A /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		C94040AE240D40D8008D4196 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		C94040B0240D44B3008D4196 /* MovieRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRequest.swift; sourceTree = "<group>"; };
 		C94040B2240D45E4008D4196 /* MoviePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePage.swift; sourceTree = "<group>"; };
-		C108D4F3240D41B50097123A /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
-		C108D4F4240D41B50097123A /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		F95B291F240D3C96000ECFC5 /* Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95B2922240D3C96000ECFC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F95B2924240D3C96000ECFC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,13 +102,12 @@
 		F95B2921240D3C96000ECFC5 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				204DC2CB240D5D78009FC06E /* movieanimation.json */,
 				C94040AD240D40B8008D4196 /* Network */,
 				C94040AC240D4093008D4196 /* Models */,
-				201E5CF3240D487200223D56 /* animation.json */,
 				F95B2922240D3C96000ECFC5 /* AppDelegate.swift */,
 				F95B2924240D3C96000ECFC5 /* SceneDelegate.swift */,
 				F95B2926240D3C96000ECFC5 /* ViewController.swift */,
-				C108D4F7240D41CE0097123A /* Movie.swift */,
 				C108D4F3240D41B50097123A /* MovieCell.swift */,
 				C108D4F4240D41B50097123A /* MovieCell.xib */,
 				F95B2928240D3C96000ECFC5 /* Main.storyboard */,
@@ -192,7 +191,7 @@
 				F95B292F240D3C97000ECFC5 /* LaunchScreen.storyboard in Resources */,
 				F95B292C240D3C97000ECFC5 /* Assets.xcassets in Resources */,
 				C108D4F6240D41B50097123A /* MovieCell.xib in Resources */,
-				201E5CF4240D487200223D56 /* animation.json in Resources */,
+				204DC2CC240D5D78009FC06E /* movieanimation.json in Resources */,
 				F95B292A240D3C96000ECFC5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
