@@ -40,6 +40,15 @@ class AFMovieRequest: MovieRequest {
   }
   
   func getImage(_ url: String, size: Int, complationHandler: @escaping ImageRequestCallback) {
-    
+
+    Alamofire.request("https://image.tmdb.org/t/p/w\(size)\(url)").responseData { (imgData) in
+      if let data = imgData.data {
+        if let img = UIImage(data: data) {
+          complationHandler(img, nil)
+          return
+        }
+      }
+      complationHandler(nil, "Pas de réponse")
+    }
   }
 }
