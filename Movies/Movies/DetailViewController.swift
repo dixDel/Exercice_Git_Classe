@@ -33,7 +33,7 @@ class DetailViewController: UIViewController {
         
     }
     @IBAction func onTapOpenBrowser(_ sender: Any) {
-        guard let url = URL(string: "https://www.google.comsearch?q=\(labelTitle.text)") else { return }
+        guard let url = URL(string: "https://www.google.com/search?q=\(labelTitle.text)") else { return }
         UIApplication.shared.open(url)
         
     }
