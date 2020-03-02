@@ -90,8 +90,8 @@
                         <outlet property="imagePoster" destination="zRv-Uj-vPc" id="gF0-6N-5FD"/>
                         <outlet property="labelDate" destination="qvz-tx-9Df" id="dxl-Ux-npS"/>
                         <outlet property="labelDescription" destination="cc3-L9-Tyu" id="MdM-wb-gTE"/>
-                        <outlet property="labelDetail" destination="Dqh-ks-WnN" id="1nz-kv-1jd"/>
                         <outlet property="labelDirector" destination="tS2-GS-XVW" id="QsT-Sr-OkM"/>
+                        <outlet property="labelTitle" destination="Dqh-ks-WnN" id="GHm-Y2-9kY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7E-Xx-O4y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
