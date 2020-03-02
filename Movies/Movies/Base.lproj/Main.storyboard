@@ -25,7 +25,7 @@
         <!--Detail View Controller-->
         <scene sceneID="sZP-E5-yaj">
             <objects>
-                <viewController id="S8z-RX-2LI" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController id="S8z-RX-2LI" customClass="DetailViewController" customModule="Movies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0TU-Mw-Nx5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,6 +86,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ica-23-CgN"/>
                     </view>
+                    <connections>
+                        <outlet property="imagePoster" destination="zRv-Uj-vPc" id="gF0-6N-5FD"/>
+                        <outlet property="labelDate" destination="qvz-tx-9Df" id="dxl-Ux-npS"/>
+                        <outlet property="labelDescription" destination="cc3-L9-Tyu" id="MdM-wb-gTE"/>
+                        <outlet property="labelDetail" destination="Dqh-ks-WnN" id="1nz-kv-1jd"/>
+                        <outlet property="labelDirector" destination="tS2-GS-XVW" id="QsT-Sr-OkM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7E-Xx-O4y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
