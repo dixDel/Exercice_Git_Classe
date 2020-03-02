@@ -77,7 +77,11 @@
 				C94040B4240D48A9008D4196 /* AFMovieRequest.swift */,
 =======
 				C5D4A37C240D492800234219 /* FakeMovieRequest.swift */,
+<<<<<<< HEAD
 >>>>>>> feat: Starting implementation of FakeMovieRequest
+=======
+				C94040B4240D48A9008D4196 /* AFMovieRequest.swift */,
+>>>>>>> update Protocol + Movie
 			);
 			path = Network;
 			sourceTree = "<group>";
