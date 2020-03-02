@@ -9,11 +9,11 @@
 import UIKit
 
 class AFMovieRequest: MovieRequest {
-  func getList(_ title: String, page: Int?) -> MoviePage? {
-    return nil
+  func getList(_ title: String, page: Int?, complationHandler: @escaping MovieRequestCallback) {
+    
   }
   
-  func getImage(_ url: String, size: Int) -> UIImage? {
-    return nil
+  func getImage(_ url: String, size: Int, complationHandler: @escaping ImageRequstCallback) {
+    
   }
 }

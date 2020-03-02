@@ -21,6 +21,13 @@ struct MoviePage: Codable {
     case results = "results"
   }
   
+  init () {
+    page = nil
+    totalResults = 0
+    totalPages = 0
+    results = Array<Movie>()
+  }
+  
   init (from decoder: Decoder) throws {
     let container = try decoder.container(keyedBy: CodingKeys.self)
      

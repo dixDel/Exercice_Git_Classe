@@ -23,6 +23,14 @@ struct Movie: Codable {
     case director = "director"
   }
   
+  init () {
+    title = nil
+    releaseDate = nil
+    posterUrl = nil
+    overview = nil
+    director = nil
+  }
+  
   init (from decoder: Decoder) throws {
     let container = try decoder.container(keyedBy: CodingKeys.self)
      

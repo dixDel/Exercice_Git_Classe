@@ -8,7 +8,10 @@
 
 import UIKit
 
+typealias MovieRequestCallback = (_ page: MoviePage?, _ error: String?) -> Void
+typealias ImageRequstCallback = (_ image: UIImage, _ error: String?) -> Void
+
 protocol MovieRequest {
-  func getList (_ title: String, page: Int?) -> MoviePage?
-  func getImage (_ url: String, size: Int) -> UIImage?
+  func getList (_ title: String, page: Int?, complationHandler: @escaping MovieRequestCallback) -> Void
+  func getImage (_ url: String, size: Int, complationHandler: @escaping ImageRequstCallback) -> Void
 }
