@@ -10,10 +10,18 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var labelDetail: UILabel!
+    @IBOutlet weak var labelDirector: UILabel!
+    @IBOutlet weak var labelDate: UILabel!
+    @IBOutlet weak var labelDescription: UILabel!
+    
+    @IBOutlet weak var imagePoster: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        
     }
     
 
