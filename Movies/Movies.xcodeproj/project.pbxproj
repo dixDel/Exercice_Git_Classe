@@ -8,13 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4080E8AFE8C839C8EA9B4771 /* Pods_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4AC14147D9783E25145462 /* Pods_Movies.framework */; };
-<<<<<<< HEAD
-=======
 		C94040AF240D40D8008D4196 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94040AE240D40D8008D4196 /* Movie.swift */; };
 		C94040B1240D44B3008D4196 /* MovieRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94040B0240D44B3008D4196 /* MovieRequest.swift */; };
 		C94040B3240D45E4008D4196 /* MoviePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94040B2240D45E4008D4196 /* MoviePage.swift */; };
 		C94040B5240D48A9008D4196 /* AFMovieRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94040B4240D48A9008D4196 /* AFMovieRequest.swift */; };
->>>>>>> origin/feature/details
 		DDB7B9CD240D402100C6D401 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB7B9CC240D402100C6D401 /* DetailViewController.swift */; };
 		F95B2923240D3C96000ECFC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95B2922240D3C96000ECFC5 /* AppDelegate.swift */; };
 		F95B2925240D3C96000ECFC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95B2924240D3C96000ECFC5 /* SceneDelegate.swift */; };
